@@ -7,6 +7,8 @@ import back from "./back.png";
 import p_img1 from "./p_img1.png";
 import p_img8 from "./p_img8.png";
 import p_img34 from "./p_img34.png";
+import hero from "./hero.png";
+import cross from "./cross.png";
 
 export const assets = {
   logo,
@@ -15,6 +17,8 @@ export const assets = {
   search,
   user,
   back,
+  hero,
+  cross,
 };
 
 export const products = [
@@ -50,7 +54,7 @@ export const products = [
     description:
       "A soft and comfortable cotton t-shirt for kids, available in various colors.",
     price: 50,
-    image: ["k_img1", "k_img2"],
+    image: [p_img1, p_img8],
     category: "Kids",
     subCategory: "T-Shirts",
     size: ["XS", "S", "M"],
@@ -63,7 +67,7 @@ export const products = [
     description:
       "A stylish denim jacket for women, perfect for layering over casual outfits.",
     price: 200,
-    image: ["w_img1", "w_img2"],
+    image: [p_img1, p_img8],
     category: "Women",
     subCategory: "Jackets",
     size: ["S", "M", "L"],
@@ -76,7 +80,7 @@ export const products = [
     description:
       "A sleek and durable leather wallet for men, with multiple card slots and compartments.",
     price: 80,
-    image: ["m_wallet_img1", "m_wallet_img2"],
+    image: [p_img1, p_img8],
     category: "Men",
     subCategory: "Accessories",
     size: ["One Size"],
@@ -89,7 +93,72 @@ export const products = [
     description:
       "Comfortable and stylish sneakers for kids, available in various sizes.",
     price: 120,
-    image: ["k_sneakers_img1", "k_sneakers_img2"],
+    image: [p_img1, p_img8],
+    category: "Kids",
+    subCategory: "Footwear",
+    size: ["28", "30", "32", "34"],
+    date: 1716634345453,
+    bestseller: false,
+  },
+  {
+    _id: "7",
+    name: "Kids' Sneakers",
+    description:
+      "Comfortable and stylish sneakers for kids, available in various sizes.",
+    price: 120,
+    image: [p_img1, p_img8],
+    category: "Kids",
+    subCategory: "Footwear",
+    size: ["28", "30", "32", "34"],
+    date: 1716634345453,
+    bestseller: true,
+  },
+  {
+    _id: "8",
+    name: "Kids' Sneakers",
+    description:
+      "Comfortable and stylish sneakers for kids, available in various sizes.",
+    price: 120,
+    image: [p_img1, p_img8],
+    category: "Kids",
+    subCategory: "Footwear",
+    size: ["28", "30", "32", "34"],
+    date: 1716634345453,
+    bestseller: true,
+  },
+  {
+    _id: "9",
+    name: "Kids' Sneakers",
+    description:
+      "Comfortable and stylish sneakers for kids, available in various sizes.",
+    price: 120,
+    image: [p_img1, p_img8],
+    category: "Kids",
+    subCategory: "Footwear",
+    size: ["28", "30", "32", "34"],
+    date: 1716634345453,
+    bestseller: false,
+  },
+  {
+    _id: "10",
+    name: "Kids' Sneakers",
+    description:
+      "Comfortable and stylish sneakers for kids, available in various sizes.",
+    price: 120,
+    image: [p_img1, p_img8],
+    category: "Kids",
+    subCategory: "Footwear",
+    size: ["28", "30", "32", "34"],
+    date: 1716634345453,
+    bestseller: false,
+  },
+  {
+    _id: "11",
+    name: "Kids' Sneakers",
+    description:
+      "Comfortable and stylish sneakers for kids, available in various sizes.",
+    price: 120,
+    image: [p_img1, p_img8],
     category: "Kids",
     subCategory: "Footwear",
     size: ["28", "30", "32", "34"],
