@@ -9,6 +9,12 @@ import p_img8 from "./p_img8.png";
 import p_img34 from "./p_img34.png";
 import hero from "./hero.png";
 import cross from "./cross.png";
+import p_img2_1 from "./p_img2_1.png";
+import p_img2_2 from "./p_img2_2.png";
+import p_img2_3 from "./p_img2_3.png";
+import p_img2_4 from "./p_img2_4.png";
+import star from './star.png'
+import star_dull from './star_dull.png'
 
 export const assets = {
   logo,
@@ -19,6 +25,9 @@ export const assets = {
   back,
   hero,
   cross,
+  star,
+  star_dull,
+ 
 };
 
 export const products = [
@@ -37,14 +46,14 @@ export const products = [
   },
   {
     _id: "2",
-    name: "Women Round Neck Cotton Top",
+    name: "Men Round Neck Pure Cotton T-shirt",
     description:
       "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
     price: 38,
-    image: [p_img34],
-    category: "Women",
+    image: [p_img2_1, p_img2_2, p_img2_3, p_img2_4],
+    category: "Men",
     subCategory: "Topwear",
-    size: ["S", "M", "L", "XL", "XXL"],
+    size: ["S", "XL", "XXL"],
     date: 1716634345449,
     bestseller: true,
   },
