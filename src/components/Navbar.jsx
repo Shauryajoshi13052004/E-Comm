@@ -7,7 +7,7 @@ import { ShopContext } from "../context/ShopContext";
 
 function Navbar() {
     const [visible,setVisible] = useState(false);
-    const{setShowSearch} = useContext(ShopContext)
+    const{setShowSearch,getCartCount} = useContext(ShopContext)
 
   return (
     <div className="flex items-center justify-between py-5 font-medium">
@@ -47,13 +47,16 @@ function Navbar() {
       </ul>
 
       <div className="flex items-center gap-6">
-        <img onClick={(e)=>setShowSearch(true)} src={assets.search} className="w-5 cursor-pointer" alt="" />
+        <img onClick={()=>setShowSearch(true)} src={assets.search} className="w-5 cursor-pointer" alt="" />
 
         <div className="group relative">
           <Menu as="div" className="relative inline-block text-left">
             <div>
               <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ">
+                
+                <Link to='/login'>
                 <img src={assets.user} className="w-5 cursor-pointer" alt="" />
+                </Link>
                 <ChevronDownIcon
                   aria-hidden="true"
                   className="-mr-1 h-5 w-5 text-gray-400"
@@ -97,7 +100,7 @@ function Navbar() {
         </div>
           <Link className="relative" to='/cart'>
           <img src={assets.cart} className="w-5 min-e-5" alt="" />
-          <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]">10</p>
+          <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]">{getCartCount()}</p>
           </Link>
           
           <img src={assets.menu} onClick={()=>setVisible(true)} className="w-5 cursor-pointer sm:hidden" alt="" />

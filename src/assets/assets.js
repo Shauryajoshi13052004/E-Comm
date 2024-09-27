@@ -15,6 +15,8 @@ import p_img2_3 from "./p_img2_3.png";
 import p_img2_4 from "./p_img2_4.png";
 import star from './star.png'
 import star_dull from './star_dull.png'
+import stripe from './stripe.png'
+import razorpay from './razorpay.png'
 
 export const assets = {
   logo,
@@ -27,7 +29,8 @@ export const assets = {
   cross,
   star,
   star_dull,
- 
+  razorpay,
+  stripe,
 };
 
 export const products = [
